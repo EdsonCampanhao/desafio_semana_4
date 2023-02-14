@@ -1,19 +1,21 @@
+/* Elemento 'pai' dos Cards -- Modifica seu comportamento de coluna para linha apartir do dispositivo */
 .popular__cards {
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-inline: auto; /* Somente a largura irá centralizar 'automaticamente (80%)' o elemento atual */
+    width: 80%; /* Modifica a largura do elemento filho para 80% do elemento pai */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adiciona colunas ou linhas para o elemento atual dependendo do seu tamanho mínimo (200px) e seu tamanho máximo (1fr == 1 parte) */
     align-items: baseline;
     column-gap: var(--space-xs);
     row-gap: 7rem;
 }
 
+/* ElementoS filhos */
 .popular__card {
-    display: grid;
-    position: relative;
-    height: calc(260rem / 16);
+    display: grid; /* Justifica para o centro a div '.popular__imgbox' */
+    position: relative; /*  Define ".popular__card" como referência para o posicionamento da div '.popular__imgbox' */  
 }
 
+/* Responsividade -- Última imagem centralizada entre 537px - 826px */
 @media (min-width: 537px) and (max-width: 826px) {
     .popular__card:last-of-type {
         grid-row: auto / 3;
@@ -23,6 +25,7 @@
     }
 }
 
+/* Images */
 .popular__imgbox {
     justify-self: center;
     position: absolute;
@@ -30,6 +33,11 @@
     top: -6rem;
 }
 
+.popular__img--height-160px {
+    height: calc(160rem / 16);
+}
+
+/* Contéudo textual */
 .popular__card-content {
     background-color: var(--white-200);
     border-radius: calc(32rem / 16);
@@ -38,6 +46,7 @@
     gap: var(--space-s);
     justify-content: flex-end;
     padding: 1rem;
+    padding-top: 5rem;
 }
 
 .popular__title {
@@ -50,9 +59,10 @@
     font-weight: 500;
 }
 
-.popular__paragraph {
+.popular__description {
     color: var(--gray);
-    margin-bottom: auto;
+    margin-bottom: 0;
+    margin-inline: .3rem;
 }
 
 .popular__price {
