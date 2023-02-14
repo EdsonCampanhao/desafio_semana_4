@@ -1,6 +1,7 @@
 @import url('./comments.css');
 @import url('./header.css');
 @import url('./intro.css');
+@import url('./popular.css');
 @import url('./localization.css');
 @import url('./footer.css');
 
@@ -46,4 +47,8 @@ p {
 h1,
 h2 {
     margin-top: var(--space-lx);
+}
+
+main {
+    text-align: center;
 }
