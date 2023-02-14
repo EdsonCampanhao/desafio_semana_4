@@ -1,0 +1,30 @@
+.intro {
+    padding: 24px;
+    color: var(--black);
+}
+
+.intro__title {
+    margin-bottom: 24px;
+
+}
+
+.intro__paragraph {
+    text-align: left;
+
+}
+.intro__button{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    width: 312px;
+    height: 40px;
+    margin-bottom: 48px;
+
+}
+.intro__img:nth-child(2){
+    display: none;
+}
+.intro__img{
+    
+}

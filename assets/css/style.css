@@ -1,0 +1,46 @@
+
+@import url('./header.css');
+@import url('./intro.css');
+
+:root {
+    --red: #da2535;
+    --black: #292929;
+    --gray: #616161;
+    --white-200: #f3f3f3;
+    --white: #fbfbfb;
+    --inter: 'Inter', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+
+    --space-xs: 1rem;
+    --space-s: calc(24rem / 16);
+    --space-sl: 2rem;
+    --space-ml: calc(40rem / 16);
+    --space-m: calc(48rem / 16);
+    --space-l: calc(62rem / 16);
+    --space-lx: calc(56rem / 16);
+    --space-x: calc(80rem / 16);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--inter);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+p {
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: var(--space-sl);
+}
+
+h1,
+h2 {
+}
