@@ -2,19 +2,20 @@
     max-width: 100%;
 }
 
-.header__container{
-     display: flex;
+.header__container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 25px 57px;
     max-width: 360px;
     margin: 0 auto;
 }
-.header__logo{
+
+.header__logo {
     width: 71px;
     height: 22px;
 }
 
-.header__list{
+.header__list {
     display: none;
 }

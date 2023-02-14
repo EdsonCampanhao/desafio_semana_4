@@ -2,14 +2,11 @@
     padding: 24px;
     color: var(--black);
 }
-
+.intro__text{
+     text-align: left;
+}
 .intro__title {
     margin-bottom: 24px;
-
-}
-
-.intro__paragraph {
-    text-align: left;
 
 }
 .intro__button{
@@ -25,6 +22,11 @@
 .intro__img:nth-child(2){
     display: none;
 }
-.intro__img{
-    
+.intro__text:nth-child(2){
+    text-align: center;
+
+}
+.intro__link{
+    color: var(--red);
+   text-decoration: underline;
 }
