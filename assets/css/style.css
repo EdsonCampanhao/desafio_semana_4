@@ -43,4 +43,5 @@ p {
 
 h1,
 h2 {
+    margin-top: var(--space-lx);
 }
