@@ -33,6 +33,9 @@
     top: -6rem;
 }
 
+.popular__img--height-160px {
+    height: calc(160rem / 16);
+}
 
 /* Contéudo textual */
 .popular__card-content {
@@ -43,6 +46,7 @@
     gap: var(--space-s);
     justify-content: flex-end;
     padding: 1rem;
+    padding-top: 5rem;
 }
 
 .popular__title {
@@ -57,7 +61,8 @@
 
 .popular__description {
     color: var(--gray);
-    margin-bottom: auto;
+    margin-bottom: 0;
+    margin-inline: .3rem;
 }
 
 .popular__price {
