@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./intro.css');
 @import url('./localization.css');
+@import url('./footer.css');
 
 :root {
     --red: #da2535;
