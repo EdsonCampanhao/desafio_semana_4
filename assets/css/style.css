@@ -1,6 +1,7 @@
 
 @import url('./header.css');
 @import url('./intro.css');
+@import url('./popular.css');
 
 :root {
     --red: #da2535;
@@ -43,4 +44,9 @@ p {
 
 h1,
 h2 {
+    margin-top: var(--space-lx);
+}
+
+main {
+    text-align: center;
 }
