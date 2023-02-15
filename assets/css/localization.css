@@ -63,6 +63,8 @@
     .localization__title{
         text-align: left;
         width: 1200px;
+        margin-top: 100px;
+        margin-bottom: 48px;
     }
 
 .localization__map{
@@ -72,6 +74,8 @@
 .localization__search{
     max-width: 820px;
     height: 70px;
+    margin-top: 56px;
+    margin-bottom: 100px;
 }
 .localization__field{
     width: 600px;
