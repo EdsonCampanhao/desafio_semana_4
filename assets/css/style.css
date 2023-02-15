@@ -6,22 +6,40 @@
 @import url('./footer.css');
 
 :root {
+    /* Cores */
     --red: #da2535;
     --black: #292929;
     --gray: #616161;
     --white-200: #f3f3f3;
     --white: #fbfbfb;
+
+    /* Fonte */
     --inter: 'Inter', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
 
+    /* Spaços */
     --space-xs: 1rem;
-    --space-s: calc(24rem / 16);
+    --space-s: 1.5rem;
     --space-sl: 2rem;
-    --space-ml: calc(40rem / 16);
-    --space-m: calc(48rem / 16);
-    --space-l: calc(62rem / 16);
-    --space-lx: calc(56rem / 16);
-    --space-x: calc(80rem / 16);
+    --space-ml: 2.5rem;
+    --space-m: 3rem;
+    --space-l: 3.5rem;
+    --space-lx: 3.875rem;
+    --space-x: 5rem;
+
+    /* Tamanhos da fonte */
+    --fs-400: 1rem;
+    --fs-500: 1.125rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+}
+
+/* Fontes Responsivas */
+@media (min-width: 1000px) {
+    :root {
+        --fs-400: 1.125rem;
+        --fs-600: 2rem;
+    }
 }
 
 * {
