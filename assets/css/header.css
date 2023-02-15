@@ -19,39 +19,50 @@
 .header__list {
     display: none;
 }
+
+.header__button {
+    display: none;
+}
+
 @media screen and (min-width: 1200px) {
 
-    .header__container{
+    .header__container {
         max-width: 1200px;
         box-sizing: border-box;
-        justify-content:flex-start;
+        justify-content: flex-start;
         gap: 259px;
         padding-top: 45px;
         margin-bottom: 110px;
     }
-   .header__hamburguer-img{
-    display: none;
-   }
-   .header__list{
-    display: flex;
-   }
-   .header__links{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 91px;
-   }
-   .header__item{
-    font-size: 24px;
-   }
-   .header__button{
-    width: 130px;
-    height: 40px;
-   font-size: 24px;
-   color: var(--black);
-   border-radius: 6px;
-   background-color: var(--white);
-   border: 1px solid var(--black);
-   }
-    
+
+    .header__hamburguer-img {
+        display: none;
+    }
+
+    .header__list {
+        display: flex;
+    }
+
+    .header__links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 91px;
+    }
+
+    .header__item {
+        font-size: 24px;
+    }
+
+    .header__button {
+        display: block;
+        width: 130px;
+        height: 40px;
+        font-size: 24px;
+        color: var(--black);
+        border-radius: 6px;
+        background-color: var(--white);
+        border: 1px solid var(--black);
+    }
+
 }
