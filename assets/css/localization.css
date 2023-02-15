@@ -59,3 +59,28 @@
 .localization__btn-txt{
     display: none;
 }
+@media screen and (min-width:1200px){
+    .localization__title{
+        text-align: left;
+        width: 1200px;
+    }
+
+.localization__map{
+    width: 1200px;
+    height: 500px;
+}
+.localization__search{
+    max-width: 820px;
+    height: 70px;
+}
+.localization__field{
+    width: 600px;
+    font-size: 24px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 24px;
+    
+  }
+    
+}
