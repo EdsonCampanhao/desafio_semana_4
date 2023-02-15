@@ -52,3 +52,15 @@ h2 {
 main {
     text-align: center;
 }
+@media screen and (min-width: 1200px) {
+    h2{
+        font-size: 48px;
+        color: var(--black);
+    }
+   p{
+    font-size: 24px;
+    color: var(--black);
+   }
+
+    
+}
