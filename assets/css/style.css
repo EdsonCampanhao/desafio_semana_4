@@ -42,14 +42,38 @@
     }
 }
 
+::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    width: .625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    scrollbar-color: var(--red);
+    border-radius: .5rem;
+}
+
 * {
     padding: 0;
     margin: 0;
     font-family: var(--inter);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+button {
+    cursor: pointer;
 }
 
 h1,
@@ -63,7 +87,7 @@ p {
 }
 
 h1,
-h2 {
+h2:not(.intro__title-first) {
     margin-top: var(--space-lx);
 }
 
