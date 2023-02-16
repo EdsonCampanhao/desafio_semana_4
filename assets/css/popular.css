@@ -1,11 +1,11 @@
 /* Elemento 'pai' dos Cards -- Modifica seu comportamento de coluna para linha apartir do dispositivo */
 .popular__cards {
     margin-inline: auto; /* Somente a largura irá centralizar 'automaticamente (80%)' o elemento atual */
-    width: 80%; /* Modifica a largura do elemento filho para 80% do elemento pai */
+    width: 85%; /* Modifica a largura do elemento filho para 80% do elemento pai */
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adiciona colunas ou linhas para o elemento atual dependendo do seu tamanho mínimo (200px) e seu tamanho máximo (1fr == 1 parte) */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Adiciona colunas ou linhas para o elemento atual dependendo do seu tamanho mínimo (200px) e seu tamanho máximo (1fr == 1 parte) */
     align-items: baseline;
-    column-gap: var(--space-xs);
+    column-gap: calc(44rem / 16);
     row-gap: 7rem;
 }
 
@@ -15,8 +15,8 @@
     position: relative; /*  Define ".popular__card" como referência para o posicionamento da div '.popular__imgbox' */  
 }
 
-/* Responsividade -- Última imagem centralizada entre 537px - 826px */
-@media (min-width: 537px) and (max-width: 826px) {
+/* Responsividade -- Última imagem centralizada entre 537px - 900px */
+@media (min-width: 659px) and (max-width: 1039px) {
     .popular__card:last-of-type {
         grid-row: auto / 3;
         grid-column: 1 / 3;
@@ -29,24 +29,25 @@
 .popular__imgbox {
     justify-self: center;
     position: absolute;
-    width: 10rem;
-    top: -6rem;
+    min-width: calc(291rem / 16);
+    top: -5rem;
+    height: calc(210rem / 16);
 }
 
 .popular__img--height-160px {
-    height: calc(160rem / 16);
+    height: calc(210rem / 16);
 }
 
 /* Contéudo textual */
 .popular__card-content {
-    background-color: var(--white-200);
-    border-radius: calc(32rem / 16);
     display: flex;
     flex-direction: column;
-    gap: var(--space-s);
     justify-content: flex-end;
-    padding: 1rem;
-    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 10rem;
+    text-align: center;
+    background-color: var(--white-200);
+    border-radius: 2rem;
 }
 
 .popular__title {
@@ -56,17 +57,48 @@
 }
 
 .popular__name {
+    font-size: var(--fs-600);
     font-weight: 500;
+    line-height: 1.5;
+    color: var(--black);
+    margin-inline: 2rem;
+    font-family: var(--montserrat);
+}
+
+@media (max-width: 715px) {
+    .popular__name--margin {
+        margin-inline: 3rem;
+    }   
 }
 
 .popular__description {
-    color: var(--gray);
-    margin-bottom: 0;
-    margin-inline: .3rem;
+    font-family: var(--inter);
+    font-size: var(--fs-400);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-inline: calc(50rem / 16);
+}
+
+
+/* Quebra de linha */
+@media(min-width: 1169px) and (max-width: 1339px){
+    .popular__name {
+        margin-inline: .5rem;
+    }
+    
+    .popular__description {
+        margin-inline: calc(30rem / 16);
+    }
 }
 
 .popular__price {
+    font-size: var(--fs-600);
+    font-weight: 500;
+    line-height: 1.5;
     font-weight: 500;
     color: var(--black);
     margin: 0;
+    font-family: var(--montserrat);
 }

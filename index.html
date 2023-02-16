@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> 
     <title>FoodJP</title>
 </head>
 
@@ -15,28 +16,50 @@
             <div class="header__container">
                 <img src='./assets/img/FoodJP_logo.png' alt="img da logo" class="header__logo">
                 <div class="header__hamburguer">
-                    <img src="./assets/img/menu_hamburguer.png" alt="Icone do menu hamburguer"
-                        class="header__hamburguer-img">
-                    <div class="header__list">
+                    <button class="header__hamburguer-btn">
+                        <img src="./assets/img/menu_hamburguer.png" alt="Icone do menu hamburguer"
+                            class="header__hamburguer-img">
+                    </button>
+                    <nav class="header__list">
                         <ul class="header__links">
-                            <li class="header__item">Inicio</li>
-                            <li class="header__item">Cardápio</li>
-                            <li class="header__item">Sobre</li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Inicio</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Cardápio</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="#">Sobre</a>
+                            </li>
                         </ul>
-
-                    </div>
-
+                    </nav>
                     </img>
                 </div>
                 <button class="header__button"> Entrar </button>
             </div>
+            <!-- Menu para dispositivos mobile -->
+            <nav class="header__nav-toggle">
+                <ul>
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Cardápio</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                        <button class="header__button | header__button-toggle"> Entrar </button>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </header>
     <main>
         <section class="intro">
             <div class="intro__card">
                 <div class="intro__text">
-                    <h2 class="intro__title">Comida Oriental</h2>
+                    <h2 class="intro__title | intro__title-first">Comida Oriental</h2>
                     <p class="intro__paragraph">A culinária Japonesa é bastante
                         equilibrada, sendo muito rica em peixes
                         (ômega 3), vegetais, massas e ingredientes frescos.</p>
@@ -65,9 +88,9 @@
                         <img class="popular__img" src="./assets/img/food-1.svg" alt="12321323">
                     </div>
                     <div class="popular__card-content">
-                        <h3 class="popular__name">Ramem de Frango</h3>
+                        <h3 class="popular__name | popular__name--margin">Ramem de Frango</h3>
                         <p class="popular__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
                         <p class="popular__price">
                             R$30
@@ -80,9 +103,9 @@
                         <img class="popular__img" src="./assets/img/food-2.svg" alt="12321323">
                     </div>
                     <div class="popular__card-content">
-                        <h3 class="popular__name">Ramem de Frango</h3>
+                        <h3 class="popular__name">Ramen Apimentado</h3>
                         <p class="popular__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
                         <p class="popular__price">
                             R$30
@@ -96,9 +119,9 @@
                             alt="12321323">
                     </div>
                     <div class="popular__card-content">
-                        <h3 class="popular__name">Ramem de Frango</h3>
+                        <h3 class="popular__name">Ramen Tradicional</h3>
                         <p class="popular__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
                         <p class="popular__price">
                             R$30
@@ -177,6 +200,6 @@
             </div>
         </section>
     </footer>
+    <script src="./assets/app.js"></script>
 </body>
-
 </html>
