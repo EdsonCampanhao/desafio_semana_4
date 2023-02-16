@@ -36,11 +36,9 @@
 
 .active {
     display: block;
-    height: auto;
-    transition: 1s ease-in-out;
 }
 
-:is(ul, li, button) {
+:is(ul, li) {
     list-style: none;
     margin-bottom: 1rem;
     font-weight: 600;
@@ -54,6 +52,7 @@
     color: var(--white);
     border-radius: 6px;
     background-color: var(--red);
+    font-weight: 600;
 }
 
 .header__hamburguer-btn {
