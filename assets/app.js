@@ -3,5 +3,5 @@ const HamburguerButton = document.querySelector(".header__hamburguer-btn");
 const navToggle = document.querySelector(".header__nav-toggle");
 
 HamburguerButton.addEventListener("click", function toggleMenu() {
-  nav.classList.toggle("active"); // Quando o botão é clicado, adiciona a classe "active" no nav
+    navToggle.classList.toggle("active"); // Quando o botão é clicado, adiciona a classe "active" no nav
 });
