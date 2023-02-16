@@ -9,17 +9,19 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> 
     <title>FoodJP</title>
 </head>
-
 <body>
+    <!-- HEADER -->
     <header>
         <section class="header">
             <div class="header__container">
+                <!-- Logo -->
                 <img src='./assets/img/FoodJP_logo.png' alt="img da logo" class="header__logo">
                 <div class="header__hamburguer">
                     <button class="header__hamburguer-btn">
                         <img src="./assets/img/menu_hamburguer.png" alt="Icone do menu hamburguer"
                             class="header__hamburguer-img">
                     </button>
+                    <!-- Menu -->
                     <nav class="header__list">
                         <ul class="header__links">
                             <li class="header__item">
@@ -33,7 +35,6 @@
                             </li>
                         </ul>
                     </nav>
-                    </img>
                 </div>
                 <button class="header__button"> Entrar </button>
             </div>
@@ -55,8 +56,11 @@
             </nav>
         </section>
     </header>
+    <!-- MAIN -->
     <main>
+        <!-- Intro Section -->
         <section class="intro">
+            <!-- Intro 1 -->
             <div class="intro__card">
                 <div class="intro__text">
                     <h2 class="intro__title | intro__title-first">Comida Oriental</h2>
@@ -67,6 +71,7 @@
                 </div>
                 <img src="./assets/img/sushi.png" alt="Imagem ilustrativa dos sushis" class="intro__img">
             </div>
+            <!-- Intro 2 -->
             <div class="intro__card">
                 <img src="./assets/img/img segurando prato (1).png" alt=" Imagem ilustrativa frango frito"
                     class="intro__img">
@@ -79,13 +84,14 @@
                 </div>
             </div>
         </section>
+        <!-- Popular Section -->
         <section class="popular">
             <h2 class="popular__title">Mais populares</h2>
             <div class="popular__cards">
-                <!-- Food 1 -->
+                <!-- Food card 1 -->
                 <article class="popular__card">
                     <div class="popular__imgbox">
-                        <img class="popular__img" src="./assets/img/food-1.svg" alt="12321323">
+                        <img class="popular__img" src="./assets/img/food-1.svg" alt="Ramem de Frango">
                     </div>
                     <div class="popular__card-content">
                         <h3 class="popular__name | popular__name--margin">Ramem de Frango</h3>
@@ -97,10 +103,10 @@
                         </p>
                     </div>
                 </article>
-                <!-- Food 2 -->
+                <!-- Food card 2 -->
                 <article class="popular__card">
                     <div class="popular__imgbox">
-                        <img class="popular__img" src="./assets/img/food-2.svg" alt="12321323">
+                        <img class="popular__img" src="./assets/img/food-2.svg" alt="Ramen Apimentado">
                     </div>
                     <div class="popular__card-content">
                         <h3 class="popular__name">Ramen Apimentado</h3>
@@ -112,11 +118,11 @@
                         </p>
                     </div>
                 </article>
-                <!-- Food 3 -->
+                <!-- Food card 3 -->
                 <article class="popular__card">
                     <div class="popular__imgbox">
                         <img class="popular__img | popular__img--height-160px" src="./assets/img/food-3.svg"
-                            alt="12321323">
+                            alt="Ramen Tradicional">
                     </div>
                     <div class="popular__card-content">
                         <h3 class="popular__name">Ramen Tradicional</h3>
@@ -130,56 +136,65 @@
                 </article>
             </div>
         </section>
+        <!-- Comments Section -->
         <section class="comments">
             <h2 class="comments__title">Comentários</h2>
 
             <div class="comments__container">
+                <!-- Seta esquerda -->
                 <div class="comments__arrow">
-                    <img src="./assets/img/arrow_l.png" class="comments__arrow-img" alt="icon arrow">
+                    <button class="comments__arrow-btn-left">
+                        <img src="./assets/img/arrow_l.png" class="comments__arrow-img" alt="icon arrow">
+                    </button>
                 </div>
-
+                <!-- Comentário -->
                 <article class="comments__card">
-
-                    <div class="comments__img"><img class="comments__img-profile" src="./assets/img/img profile 2 (2).png" alt="Foto do usuário">
+                    <div class="comments__img">
+                        <img class="comments__img-profile" src="" alt="Foto do usuário">
                     </div>
-                    <h3 class="comments__name">Daniele Almeida</h3>
+                    <h3 class="comments__name"></h3>
                     <p class="comments__review">
-                        Ótimo serviço! Encantada com a qualidade dos pratos.
                     </p>
                     <div class="divopular__review-stars">
                         <img src="./assets/img/estrelas.png" alt="Quantidade de estrelas">
                     </div>
                 </article>
-
-
-                <div class="comments__arrow"><img src="./assets/img/arrow_r.png" class="comments__arrow-img"
-                        alt="icon arrow"></div>
+                <!-- Seta direita -->
+                <div class="comments__arrow">
+                    <button class="comments__arrow-btn-right">
+                        <img src="./assets/img/arrow_r.png" class="comments__arrow-img"
+                            alt="icon arrow">
+                    </button>
+                </div>
             </div>
-
         </section>
+        <!-- Localization Section -->
         <section class="localization">
             <h2 class="localization__title">Localização</h2>
+            <!-- Mapa -->
             <iframe class="localization__map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.618584786118!2d-43.0054337042763!3d-22.80599687762794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999b92278dd08b%3A0xd61bfe7cb69be93f!2sJapa&#39;Ok!5e0!3m2!1spt-BR!2sbr!4v1676316284885!5m2!1spt-BR!2sbr"
                 width="360" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- Input Delivery -->
             <div class="localization__search">
-
                 <div class="localization__container">
                     <img class="localization__icon" src="./assets/img/fi_map-pin.png" alt=" icone">
                     <input type="text" placeholder="Localização para entrega" class="localization__field">
                 </div>
                 <button class="localization__btn">
-                    <p class="localization__btn-txt">Buscar</p> <img class="localization__btn-icon"
+                    <p class="localization__btn-txt">Buscar</p>
+                    <img class="localization__btn-icon"
                         src="./assets/img/search.png" alt="">
                 </button>
             </div>
         </section>
     </main>
+    <!-- FOOTER -->
     <footer>
         <section class="footer">
             <img src="./assets/img/FoodJP_logo.png" class="footer__img" alt="logo da empresa">
-
             <div class="container">
                 <div class="footer__content">
                     <h2 class="footer__title">Contato</h2>
@@ -200,6 +215,6 @@
             </div>
         </section>
     </footer>
-    <script src="./assets/app.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
 </body>
 </html>
