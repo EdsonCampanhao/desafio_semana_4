@@ -19,7 +19,8 @@
     color: var(--white);
     border: none;
     border-radius: 6px;
-    width: 312px;
+    width: min(312px, 100%);
+    /* width: 312px; */
     height: 40px;
     margin-bottom: 48px;
 

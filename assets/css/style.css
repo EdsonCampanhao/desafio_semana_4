@@ -87,7 +87,7 @@ p {
 }
 
 h1,
-h2:not(.intro__title-first) {
+h2:not(.intro__title-first, .footer__title) {
     margin-top: var(--space-lx);
 }
 
