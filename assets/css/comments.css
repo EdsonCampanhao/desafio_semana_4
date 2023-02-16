@@ -1,21 +1,23 @@
-.comments{
-text-align: center;
+.comments {
+    text-align: center;
 }
-.comments__title{
+
+.comments__title {
     color: var(--black);
     margin-bottom: 40px;
-    
-
 }
-.comments__container{
+
+.comments__container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.comments__card{
+
+.comments__card {
     width: 312px;
-    height: 240px;
+    height: auto;
+    /* height: 240px; */
     background-color: var(--white-200) ;
     padding: 20px;
     box-sizing: border-box;
@@ -24,44 +26,63 @@ text-align: center;
     gap:8px;
     border-radius: 20px;
 }
-.comments__name{
+
+.comments__name {
     font-weight: 500;
 }
-.comments__review{
+
+.comments__review {
     margin: 0;
 }
+
+.comments__img-profile {
+    width: 3.75rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.comments__arrow > button {
+    background-color: transparent;
+    border: none;
+}
+
 @media screen and (min-width: 1200px) {
-    .comments{
+    .comments {
        max-width: 1200px;
        margin: 0 auto;
     }
-    .comments__container{
+
+    .comments__container {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
-    }
-    .comments__title{
         text-align: left;
+    }
+
+    .comments__title {
         margin-top: 100px;
     }
-    .comments__card{
+    
+    .comments__card {
         width: 604px;
         height: 390px;
-        text-align: left;
         margin: 0;
-        
         padding: 40px;
     }
-    .comments__img-profile{
-        width: 120px;
-        height: 120px;
+
+    .comments__img-profile {
+        width: 7.5rem;
+        /* width: 120px; */
+        /* height: 120px; */
     }
-    .comments__name{
+
+    .comments__name {
         font-size: 32px;
     }
-    .comments__review{
+     
+    .comments__review {
         font-size: 24px;
-        width: 455px;
+        /* width: 455px; */
     }
 }
