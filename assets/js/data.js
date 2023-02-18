@@ -13,7 +13,7 @@ export const users = [
 	},
 	{
 		id: 3,
-		name: `victoria mel`,
+		name: `Victoria Mel`,
 		img: `https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600`,
 		review: `Lorem ipsum dolor sit amet consectetur,`
 	},
