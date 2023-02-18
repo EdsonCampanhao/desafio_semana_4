@@ -2,7 +2,7 @@ export const users = [
     {
         id: 1,
         name: `Daniele Almeida`,
-        img: `./assets/img/img profile 2 (2).png`,
+        img: `./assets/img/img_profile_2_(2).png`,
         review: `Ótimo serviço! Encantada com a qualidade dos pratos.`
     },
 	{
