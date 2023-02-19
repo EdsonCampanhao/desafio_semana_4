@@ -11,7 +11,6 @@
 
 .intro__title {
     margin-bottom: 24px;
-
 }
 
 .intro__button {
@@ -23,7 +22,21 @@
     /* width: 312px; */
     height: 40px;
     margin-bottom: 48px;
+}
 
+.intro__img:nth-child(2) {
+    position: relative;
+    animation: smooth-img .5s ease-in-out;
+}
+
+@keyframes smooth-img {
+    from {
+        transform: translateX(200%);
+    }
+    
+    to {
+        transform: translateX(0);
+    }
 }
 
 .intro__img:nth-child(2) {
@@ -32,7 +45,6 @@
 
 .intro__text:nth-child(2) {
     text-align: center;
-
 }
 
 .intro__link {
@@ -57,6 +69,21 @@
     .intro__text{
         max-width: 500px;
     }
+
+    .intro__text--animation {
+        animation: smooth-text .5s ease-in-out;
+    }
+    
+    @keyframes smooth-text {
+        from {
+            transform: translateX(-100%);
+        }
+    
+        to {
+            transform: translateX(0%);
+        }
+    }
+    
     .intro__button{
         font-size: 24px;
     }

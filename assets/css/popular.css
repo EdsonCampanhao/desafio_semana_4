@@ -65,12 +65,6 @@
     font-family: var(--montserrat);
 }
 
-@media (max-width: 715px) {
-    .popular__name--margin {
-        margin-inline: 3rem;
-    }   
-}
-
 .popular__description {
     font-family: var(--inter);
     font-size: var(--fs-400);
@@ -81,6 +75,12 @@
     margin-inline: calc(50rem / 16);
 }
 
+/* Quebra de linha */
+@media (max-width: 708px) {
+    .popular__name--margin {
+        margin-inline: 3rem;
+    }
+}
 
 /* Quebra de linha */
 @media(min-width: 1169px) and (max-width: 1339px){

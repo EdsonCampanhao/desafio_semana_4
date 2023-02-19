@@ -10,6 +10,7 @@
     padding: 25px 25px 10px;
     max-width: 360px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header__logo {
@@ -39,9 +40,17 @@
     display: none;
 }
 
+.header__button:is(:hover, :focus) {
+    color: var(--white);
+    background-color: var(--black);
+}
+
 .header__nav-toggle {
-    text-align: center;
+    max-width: min(360rem / 16, 85%);
+    margin: 0 auto;
+    text-align: right;
     display: none;
+    /* padding-right: 25px */
 }
 
 .active {
@@ -55,13 +64,12 @@
 }
 
 .header__button-toggle {
-    margin: 0 auto; 
-    display: block;
+    display: inline;
     padding: .5rem 2rem;
-    font-size: 16px;
-    color: var(--white);
-    border-radius: 6px;
-    background-color: var(--red);
+    font-size: 1rem;
+    background-color: var(--white);
+    border-radius: 0.375rem;
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -80,6 +88,17 @@
         padding-top: 45px;
         /* margin-bottom: 110px; */
         margin-bottom: 1rem;
+        animation: smooth-header .5s ease-in-out;
+    }
+
+    @keyframes smooth-header {
+        from {
+            transform: translateY(-100%);
+        }
+    
+        to {
+            transform: translateY(0);
+        }
     }
 
     .header__hamburguer-img {
@@ -114,10 +133,5 @@
         border-radius: 6px;
         background-color: var(--white);
         border: 1px solid var(--black);
-    }
-
-    .header__button:is(:hover :focus) {
-        color: var(--white);
-        background-color: var(--black);
     }
 }
