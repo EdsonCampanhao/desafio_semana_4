@@ -39,14 +39,15 @@
 }
 .localization__field{
     border: none;
-    width: 143px;
+    width: 100%;
+    /* width: 143px; */
 }
 .localization__field:focus{
     border: none;
     box-shadow: none;
     box-shadow: 0 0 0 0;
     outline: 0;
-    margin: 0 71px 0 15px;
+    /* margin: 0 71px 0 15px; */
 }
 .localization__btn{
     background-color: var(--red);
