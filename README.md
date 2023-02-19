@@ -7,8 +7,8 @@ Este é o resultado do 4° desafio realizado no grupo "**desbravando a programa�
 - CSS
 
 ## Funcionalidades
-- Navegação através do menu hamburguer;
-- Navegação através do menu para dispositivos móveis;
+- Menu hamburguer para dispositivos móveis;
+- Animações;
 - Responsividade;
 
 ## Visual
